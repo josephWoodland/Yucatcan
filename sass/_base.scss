@@ -1,0 +1,77 @@
+// COLOR VARIABLES
+$color-primary: #ef5159;
+$color-primary-bright: #fd3c3c;
+$color-yellow: #ffb74c;
+$color-blue: #061283;
+$color-blue-light: #138d90;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$color-footer: #333;
+$color-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+$color-shadow-close: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+
+// FONT VARIABLES
+$font-primary: "Signika", sans-serif;
+$font-secondary: "bourbon", serif;
+
+$defualt-font-size: 2rem;
+$defualt-font-large: 3rem;
+$defualt-font-v-large: 9rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 100em; // 1400px
+$bp-large: 75em; // 1200px
+$bp-medium: 62.5em; // 1000px
+$bp-small: 43.75em; // 700px;
+$bp-xsmall: 37.5em; // 600px;
+
+@media only screen and (max-width: $bp-medium) {
+  $defualt-font-size: 1.6rem;
+  $defualt-font-large: 2.5rem;
+  $defualt-font-v-large: 7rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "bourbon", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  background-color: $color-grey-light-1;
+  margin: auto;
+  color: #333;
+}
+.del-section {
+  width: auto;
+  height: max-content;
+  padding: 5rem 20%;
+  background-color: $color-yellow;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 5rem 7%;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    font-size: 7rem;
+    padding: 5rem 2%;
+  }
+}

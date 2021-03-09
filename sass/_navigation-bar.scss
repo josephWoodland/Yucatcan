@@ -1,0 +1,60 @@
+.navigation-bar {
+  background-color: rgba($color-grey-light-1, 0.5);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 7rem;
+  padding: 0 3rem;
+
+  @media only screen and (max-width: $bp-small) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 5rem;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+  }
+
+  &__logo {
+    height: 5.5rem;
+    @media only screen and (max-width: $bp-medium) {
+      height: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 0rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: $defualt-font-large;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.6rem;
+    }
+
+    li {
+      margin-top: auto;
+      margin-left: 2rem;
+      justify-self: end;
+
+      a {
+        color: $color-primary;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:active {
+        color: $color-blue;
+        border-bottom: 1px solid $color-blue;
+      }
+    }
+  }
+}

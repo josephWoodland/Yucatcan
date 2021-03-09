@@ -1,0 +1,49 @@
+.form {
+  &__group {
+    font-size: $defualt-font-size;
+    font-family: inherit;
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    font-size: $defualt-font-size;
+    font-family: inherit;
+    color: inherit;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(#fff, 0.8);
+    border-bottom: 3px solid transparent;
+    width: 60%;
+    display: block;
+    transition: all 0.3s;
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-1;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: $color-shadow-close;
+      border-bottom: 3px solid $color-blue-light;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-primary;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__input:placeholder-shown ~ &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}

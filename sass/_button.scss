@@ -1,0 +1,83 @@
+.btn,
+.btn:link,
+.btn:visited,
+.btn:focus {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  width: max-content;
+
+  font-size: $defualt-font-large;
+  transition: all 0.2s;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
+  }
+
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: $color-shadow;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: $color-shadow-close;
+}
+
+.btn-cta {
+  border-radius: 10rem;
+  background-color: rgba($color-yellow, 0.5);
+  color: $color-blue;
+  margin-left: 15vw;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  background-color: $color-yellow;
+}
+
+.btn-cta-2 {
+  @media only screen and (max-width: $bp-small) {
+    margin: auto;
+    margin-top: 3rem;
+  }
+}
+
+.btn-cta-1 {
+  background-color: rgba($color-yellow, 0.5);
+  color: $color-blue;
+  @media only screen and (max-width: $bp-small) {
+    margin: auto;
+    margin-top: 3rem;
+  }
+}
+
+.btn-cta-1:hover,
+.btn-cta-1:active,
+.btn-cta-1:focus {
+  background-color: $color-yellow;
+}
+
+.btn-grid {
+  color: $color-blue;
+
+  @media only screen and (max-width: $bp-medium) {
+    color: $color-primary-bright;
+    background-color: $color-blue-light;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+}
+
+.btn-grid:hover,
+.btn-grid:active {
+  color: $color-primary-bright;
+  background-color: $color-blue-light;
+  transform: translateY(-3px);
+  height: 3rem;
+}

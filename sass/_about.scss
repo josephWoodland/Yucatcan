@@ -1,0 +1,112 @@
+.about {
+  margin: 8% 10%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  grid-template-rows: repeat(2, minmax(20rem, 1fr));
+  grid-gap: 8rem;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 8% 5%;
+    grid-gap: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-gap: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    margin: 8% 1%;
+    grid-gap: 5rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 5vw);
+    grid-template-rows: repeat(8, 8vh);
+    grid-gap: 1.5rem;
+    align-content: center;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 8% 5%;
+      grid-template-rows: repeat(8, 12vh);
+      grid-gap: 1rem;
+    }
+    @media only screen and (max-width: $bp-large) {
+      margin: 8% 5%;
+      grid-template-rows: repeat(8, 8vh);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(8, 9vw);
+      grid-template-rows: repeat(8, 8vh);
+    }
+
+    &__item {
+      &--1 {
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 4;
+      }
+      &--2 {
+        grid-row: 1 / span 2;
+        grid-column: 5 / span 4;
+      }
+      &--3 {
+        grid-row: 3 / span 4;
+        grid-column: 4 / span 5;
+      }
+      &--4 {
+        grid-row: 3 / span 4;
+        grid-column: 1 / span 3;
+      }
+      &--5 {
+        grid-row: 7 / span 2;
+        grid-column: 1 / span 4;
+      }
+      &--6 {
+        grid-row: 7 / span 2;
+        grid-column: 5 / span 4;
+      }
+    }
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background-position: center;
+    }
+  }
+
+  &__founder {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 3rem;
+    }
+
+    &--text {
+    }
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background-position: center;
+
+      @media only screen and (max-width: $bp-small) {
+        grid-row: 4 / span 1;
+      }
+    }
+  }
+}
