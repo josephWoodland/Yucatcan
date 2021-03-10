@@ -1,1 +1,2 @@
 This is a new practice file, so I can get my head around what is going on with Git. 
+This comment has been changed localy. I wonder what is going to happen?
