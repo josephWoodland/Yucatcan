@@ -1,2 +1,4 @@
-This is a new practice file, so I can get my head around what is going on with Git. 
+Thid line is being altered in the new local branch
 This comment has been changed localy. I wonder what is going to happen?
+
+Thi sline was added in feature branch.
