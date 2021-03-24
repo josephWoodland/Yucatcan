@@ -64,7 +64,7 @@ body {
   width: auto;
   height: max-content;
   padding: 5rem 20%;
-  background-color: $color-yellow;
+  background-color: rgba(255, 183, 76, 0.5);
 
   @media only screen and (max-width: $bp-largest) {
     padding: 5rem 7%;

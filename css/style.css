@@ -28,7 +28,7 @@ body {
   width: auto;
   height: max-content;
   padding: 5rem 20%;
-  background-color: #ffb74c;
+  background-color: rgba(255, 183, 76, 0.5);
 }
 @media only screen and (max-width: 100em) {
   .del-section {
@@ -152,9 +152,9 @@ p {
 }
 @media only screen and (max-width: 62.5em) {
   .btn,
-  .btn:link,
-  .btn:visited,
-  .btn:focus {
+.btn:link,
+.btn:visited,
+.btn:focus {
     padding: 1rem 3rem;
     font-size: 2.5rem;
   }
@@ -208,6 +208,8 @@ p {
 
 .btn-grid {
   color: #061283;
+  grid-row: 2/span 1;
+  grid-column: 5/span 2;
 }
 @media only screen and (max-width: 62.5em) {
   .btn-grid {
@@ -223,6 +225,7 @@ p {
   color: #fd3c3c;
   background-color: #138d90;
   transform: translateY(-3px);
+  height: 3rem;
 }
 
 .header {
@@ -383,14 +386,7 @@ p {
   transform: translateY(-1rem) scale(1.3);
   color: #333;
   background-size: 70%;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   overflow: hidden;
 }
 
@@ -413,13 +409,7 @@ p {
 }
 .contact__box {
   margin: 0 15rem;
-  background-image: linear-gradient(
-      105deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.8) 60%,
-      transparent 70%
-    ),
-    url(../img/Menu-Table.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 60%, transparent 70%), url(../img/Menu-Table.jpg);
   background-size: 100%;
   border-radius: 2px;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
@@ -443,11 +433,7 @@ p {
 }
 @media only screen and (max-width: 62.5em) {
   .contact__box {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.8) 0%,
-        rgba(255, 255, 255, 0.8) 100%
-      ),
-      url(../img/Menu-Table.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../img/Menu-Table.jpg);
   }
 }
 .contact__box__form {
@@ -516,6 +502,7 @@ p {
   border-radius: 10px;
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
   padding-left: 5%;
+  background-color: #ffb74c;
 }
 @media only screen and (max-width: 43.75em) {
   .delivary__card {
@@ -525,12 +512,12 @@ p {
   }
 }
 .delivary__card__platforms {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 5;
+  grid-row: 2/span 1;
+  grid-column: 2/span 5;
 }
 @media only screen and (max-width: 62.5em) {
   .delivary__card__platforms {
-    grid-column: 1 / span 6;
+    grid-column: 1/span 6;
   }
 }
 @media only screen and (max-width: 62.5em) {
@@ -539,29 +526,29 @@ p {
   }
 }
 .delivary__card__direct {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 5;
+  grid-row: 1/span 1;
+  grid-column: 1/span 5;
 }
 @media only screen and (max-width: 62.5em) {
   .delivary__card__direct {
-    grid-column: 1 / span 6;
+    grid-column: 1/span 6;
   }
 }
 .delivary__card__boxes {
-  grid-row: 3 / span 1;
-  grid-column: 1 / span 5;
+  grid-row: 3/span 1;
+  grid-column: 1/span 5;
 }
 @media only screen and (max-width: 62.5em) {
   .delivary__card__boxes {
-    grid-column: 1 / span 6;
+    grid-column: 1/span 6;
   }
 }
 .delivary__card--img {
   width: 100%;
 }
 .delivary__icons {
-  grid-row: 1 / span 3;
-  grid-column: 5 / span 2;
+  grid-row: 1/span 3;
+  grid-column: 5/span 2;
   display: grid;
   grid-gap: 1.5rem;
   grid-template-rows: repeat(3, 30%);
@@ -571,8 +558,8 @@ p {
 }
 @media only screen and (max-width: 43.75em) {
   .delivary__icons {
-    grid-row: 4 / span 1;
-    grid-column: 1 / span 4;
+    grid-row: 4/span 1;
+    grid-column: 1/span 4;
     grid-gap: 1rem;
     grid-template-rows: min-content;
     grid-template-columns: repeat(3, 1fr);
@@ -582,67 +569,65 @@ p {
 .delivary__icons--justeat {
   justify-self: center;
   align-self: center;
-  grid-row: 3 / span 1;
+  grid-row: 3/span 1;
   width: 80%;
 }
 @media only screen and (max-width: 43.75em) {
   .delivary__icons--justeat {
-    grid-row: 2 / span 1;
-    grid-column: 3 / span 1;
+    grid-row: 2/span 1;
+    grid-column: 3/span 1;
   }
 }
 .delivary__icons--delivaroo {
   justify-self: center;
   align-self: center;
-  grid-row: 2 / span 1;
+  grid-row: 2/span 1;
   width: 50%;
 }
 @media only screen and (max-width: 43.75em) {
   .delivary__icons--delivaroo {
-    grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
     width: 40%;
   }
 }
 .delivary__icons--uber {
   justify-self: center;
   align-self: center;
-  grid-row: 1 / span 1;
+  grid-row: 1/span 1;
   width: 80%;
 }
 @media only screen and (max-width: 43.75em) {
   .delivary__icons--uber {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
   }
 }
 .delivary__heading {
   justify-self: center;
   align-self: center;
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 4;
+  grid-row: 1/span 1;
+  grid-column: 1/span 4;
 }
 .delivary__sub-heading {
   align-self: center;
-  grid-row: 2 / span 1;
-  grid-column: 1 / span 4;
+  grid-row: 2/span 1;
+  grid-column: 1/span 4;
 }
 .delivary__details {
-  grid-row: 3 / span 1;
-  grid-column: 1 / span 4;
+  grid-row: 3/span 1;
+  grid-column: 1/span 4;
 }
 .delivary__btn {
   justify-self: center;
   align-self: center;
-  grid-row: 2 / span 1;
-  grid-column: 5 / span 2;
   border: none;
   background-color: transparent;
 }
 @media only screen and (max-width: 43.75em) {
   .delivary__btn {
-    grid-row: 4 / span 1;
-    grid-column: 1 / span 4;
+    grid-row: 4/span 1;
+    grid-column: 1/span 4;
   }
 }
 
@@ -705,28 +690,28 @@ p {
   }
 }
 .about__gallery__item--1 {
-  grid-row: 1 / span 2;
-  grid-column: 1 / span 4;
+  grid-row: 1/span 2;
+  grid-column: 1/span 4;
 }
 .about__gallery__item--2 {
-  grid-row: 1 / span 2;
-  grid-column: 5 / span 4;
+  grid-row: 1/span 2;
+  grid-column: 5/span 4;
 }
 .about__gallery__item--3 {
-  grid-row: 3 / span 4;
-  grid-column: 4 / span 5;
+  grid-row: 3/span 4;
+  grid-column: 4/span 5;
 }
 .about__gallery__item--4 {
-  grid-row: 3 / span 4;
-  grid-column: 1 / span 3;
+  grid-row: 3/span 4;
+  grid-column: 1/span 3;
 }
 .about__gallery__item--5 {
-  grid-row: 7 / span 2;
-  grid-column: 1 / span 4;
+  grid-row: 7/span 2;
+  grid-column: 1/span 4;
 }
 .about__gallery__item--6 {
-  grid-row: 7 / span 2;
-  grid-column: 5 / span 4;
+  grid-row: 7/span 2;
+  grid-column: 5/span 4;
 }
 .about__gallery--img {
   width: 100%;
@@ -754,7 +739,7 @@ p {
 }
 @media only screen and (max-width: 43.75em) {
   .about__founder--img {
-    grid-row: 4 / span 1;
+    grid-row: 4/span 1;
   }
 }
 
